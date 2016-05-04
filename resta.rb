@@ -1,0 +1,2 @@
+class resta
+end

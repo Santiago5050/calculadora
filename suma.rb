@@ -1,0 +1,2 @@
+class suma
+end

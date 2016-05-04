@@ -1,0 +1,2 @@
+class raiz_cuadrada
+end

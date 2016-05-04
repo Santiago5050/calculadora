@@ -1,0 +1,2 @@
+class unaria
+end
