@@ -32,19 +32,19 @@ class Calculator
 			when OPERATIONS[:sum] then Sum
 			when OPERATIONS[:multiplication] then Multiplication
 			when OPERATIONS[:substract] then Sustraction
-			when OPERATIONS[:division] then division
+			when OPERATIONS[:division] then Division
 			when OPERATIONS[:inverse] then Invers
 			when OPERATIONS[:square] then Square
 			when OPERATIONS[:square_root] then SquareRoot
 		end
-
 		@current_operation = operation_class.new(@operand_temp)
 		@operand_temp = ''
 	end
 
 	def	execute
+		result = @current_operation.execute
 		clear
-		@current_operation.execute
+		result
 	rescue ZeroDivisionError
 		'ERROR'
 	end
